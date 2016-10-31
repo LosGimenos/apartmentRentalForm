@@ -7,6 +7,45 @@
 <body>
 <h1>Tell Me About the Apartment You Are Looking For</h1>
 
-<script type="text/javascript" src="bundle/bundle.js"></script>
+<form id="input-form">
+<input type="text" placeholder="first name" maxlength="70" required />
+<input type="text" placeholder="last name" maxlength="70" required />
+<input type="email" placeholder="email" required />
+<input type="tel" placeholder="mobile" required /></br>
+<div id="size">
+<form required>
+<p>Size</p>
+<input type="radio" name="size" value="studio" checked>Studio</br>
+<input type="radio" name="size" value="1br">1br</br>
+<input type="radio" name="size" value="2br">2br</br>
+<input type="radio" name="size" value="3br">3br</br>
+<input type="radio" name="size" value="Other">Other</br>
+</form>
+</div>
+<div id="pets">
+Pets</br>
+<input type="radio" name="pets" value="cats" >Cats</br>
+<input type="radio" name="pets" value="cats">Dogs</br>
+<input type="radio" name="pets" value="both cats and dogs">Both Cats and Dogs</br>
+<input type="radio" name="pets" value="no pets" checked>No Pets</br>
+</div>
+<div>
+Do You Need a Guarantor?
+<select>
+  <option value="-">-</option>
+  <option value="yes">Yes</option>
+  <option value="no">No</option>
+  <option value="What's a Guarantor?">What's a Guarantor?</option>
+</select>
+</div>
+<input type="text" placeholder="locations desired" required />
+<input type="text" placeholder="max budget" required />
+<input type="text" placeholder="desired lease start date" required />
+<input type="text" placeholder="reason for moving" size="55" required />
+<input type="text" placeholder="anything you would like to mention" size='55'/>
+<input type="submit" />
+</form>
+
+<!-- <script type="text/javascript" src="bundle/bundle.js"></script> -->
 </body>
 </html>
